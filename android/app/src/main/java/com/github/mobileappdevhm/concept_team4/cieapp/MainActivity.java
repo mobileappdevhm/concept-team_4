@@ -1,4 +1,4 @@
-package com.github.mobileappdevhm.concept-team4.cieapp;
+package com.github.mobileappdevhm.concept_team4.cieapp;
 
 import android.os.Bundle;
 

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.mobileappdevhm.concept-team4.cieapp">
+    package="com.github.mobileappdevhm.concept_team4.cieapp">
 
     <!-- The INTERNET permission is required for development. Specifically,
          flutter needs it to communicate with the running application
