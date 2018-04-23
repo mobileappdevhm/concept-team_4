@@ -10,16 +10,14 @@ class _MainViewState extends State<MainView> {
   @override
   Widget build(BuildContext context) {
     return new Center(
-        child: new Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0),
-            child: new Column(
+        child: new Column(
               children: <Widget>[
-                //new Container(height: 20.0,),
                 new Expanded(
                     child: new Row(
                   children: <Widget>[
                     new Expanded(
                         child: new Container(
+                          margin: EdgeInsets.only(left: 15.0,top: 15.0, right: 7.5, bottom: 5.0),
                       decoration: new BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           border: new Border(
@@ -55,6 +53,7 @@ class _MainViewState extends State<MainView> {
                       children: <Widget>[
                         new Expanded(
                             child: new Container(
+                              margin: EdgeInsets.only(left: 7.5 ,top: 15.0, right: 15.0, bottom: 5.0),
                           decoration: new BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
@@ -78,7 +77,7 @@ class _MainViewState extends State<MainView> {
                                 )),
                                 new Text(
                                   'FAVORITES',
-                                  style: new TextStyle(fontSize: 30.0),
+                                  style: new TextStyle(fontSize: 25.0),
                                 )
                               ],
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -96,6 +95,7 @@ class _MainViewState extends State<MainView> {
                   children: <Widget>[
                     new Expanded(
                         child: new Container(
+                          margin: EdgeInsets.only(left: 15.0, top: 5.0, right: 7.5, bottom: 5.0),
                       decoration: new BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           border: new Border(
@@ -131,6 +131,7 @@ class _MainViewState extends State<MainView> {
                       children: <Widget>[
                         new Expanded(
                             child: new Container(
+                              margin: EdgeInsets.only(left: 7.5, top: 5.0, right: 15.0, bottom: 5.0),
                           decoration: new BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
@@ -172,6 +173,7 @@ class _MainViewState extends State<MainView> {
                   children: <Widget>[
                     new Expanded(
                         child: new Container(
+                          margin: EdgeInsets.only(left: 15.0, top: 5.0, right: 7.5, bottom: 15.0),
                       decoration: new BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           border: new Border(
@@ -207,6 +209,7 @@ class _MainViewState extends State<MainView> {
                       children: <Widget>[
                         new Expanded(
                             child: new Container(
+                              margin: EdgeInsets.only(left: 7.5, top: 5.0, right: 15.0, bottom: 15.0),
                           decoration: new BoxDecoration(
                               borderRadius:
                                   BorderRadius.all(Radius.circular(10.0)),
@@ -230,7 +233,7 @@ class _MainViewState extends State<MainView> {
                                 )),
                                 new Text(
                                   'LOCATIONS',
-                                  style: new TextStyle(fontSize: 30.0),
+                                  style: new TextStyle(fontSize: 25.0),
                                 )
                               ],
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -244,6 +247,6 @@ class _MainViewState extends State<MainView> {
                 )),
                 //new Container(height: 20.0,),
               ],
-            )));
+            ));
   }
 }
