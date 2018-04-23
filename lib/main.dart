@@ -5,7 +5,8 @@ import 'package:flutter/foundation.dart';
 void main() => runApp(new CieApp());
 
 class CieApp extends StatelessWidget {
-  // This widget is the root of your application.
+
+  // Main "View"
   @override
   Widget build(BuildContext context) {
     final ThemeData iOsTheme = new ThemeData(

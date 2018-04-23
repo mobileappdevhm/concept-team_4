@@ -32,13 +32,13 @@ class _BottomNavState extends State<CieBottomNav> {
           backgroundColor: Colors.red[700]
       ),
       new BottomNavigationBarItem(
-          icon: const Icon(Icons.search),
-          title: new Text('Search'),
+          icon: const Icon(Icons.info),
+          title: new Text('More Information'),
           backgroundColor: Colors.red[700]
       ),
       new BottomNavigationBarItem(
-          icon: const Icon(Icons.perm_identity),
-          title: new Text('Profile'),
+          icon: const Icon(Icons.search),
+          title: new Text('Search'),
           backgroundColor: Colors.red[700]
       ),
     ].toList();
