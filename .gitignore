@@ -6,5 +6,10 @@
 .pub/
 build/
 ios/.generated/
-packages
 .flutter-plugins
+android.iml
+android/app/src/main/java/io/
+android/gen/
+cie_app.iml
+cie_app_android.iml
+test/
