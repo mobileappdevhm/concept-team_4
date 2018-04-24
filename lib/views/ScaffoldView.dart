@@ -6,34 +6,21 @@ import 'package:flutter/material.dart';
 enum CurrentView { home, profile, contact }
 
 class ScaffoldView extends StatefulWidget {
-  static Map<CurrentView, Widget> _widgets = new Map<CurrentView, Widget>();
-  static Widget _currentWidget;
+
 
   @override
   State<StatefulWidget> createState() =>
-      new _ScaffoldViewSate(_currentWidget, _widgets);
+      new _ScaffoldViewSate();
 }
 
 class _ScaffoldViewSate extends State<ScaffoldView> {
-  Widget _leading;
-  Map<CurrentView, Widget> _widgets;
-
-  _ScaffoldViewSate(Widget _leading, Map<CurrentView, Widget> widgets) {
-    this._leading = _leading;
-    this._widgets = _widgets;
-  }
 
   @override
   Widget build(BuildContext context) {
-    if (_widgets.isEmpty) {
-      // Adding all of our "Views" to the map, so that we can access the state later
-      _leading = _widgets.putIfAbsent(CurrentView.home, () => new MainView());
-    }
-
     return new Scaffold(
-      body: _leading,
+      body: new MainView(),
       bottomNavigationBar: new CieBottomNav(),
-      appBar: new CieTopNav(_leading).getTopNav(),
+      appBar: new CieTopNav().getTopNav(),
     );
   }
 }

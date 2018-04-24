@@ -116,7 +116,7 @@ class _MainViewState extends State<MainView> {
                     )),
                     new Text(
                       'SCHEDULE',
-                      style: new TextStyle(fontSize: 30.0),
+                      style: new TextStyle(fontSize: 25.0),
                     )
                   ],
                   crossAxisAlignment: CrossAxisAlignment.center,
