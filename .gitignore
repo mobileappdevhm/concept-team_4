@@ -13,3 +13,8 @@ android/gen/
 cie_app.iml
 cie_app_android.iml
 test/
+.gradle/
+gen/
+gradle/
+!gradle-wrapper.jar
+pubspec.lock
